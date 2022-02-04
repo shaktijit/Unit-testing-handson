@@ -53,9 +53,9 @@ describe('Basic details', () => {
 
   it('should check the div after the lion-input-amount', async () => {
     const el = await fixture('<basic-details></basic-details>');
-    expect(el.shadowRoot.querySelector('#word').getAttribute('id')).to.equal(
-      'word'
-    );
+    expect(
+      el.shadowRoot.querySelectorAll('div')[3].getAttribute('id')
+    ).to.equal('word');
   });
 
   it('should check the lion-input-range inside the basic web form', async () => {
