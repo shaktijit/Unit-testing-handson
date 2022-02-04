@@ -5,10 +5,6 @@ import '../src/LoanBasicDetails/BasicDetails.js';
 describe('Basic details', () => {
   // Write test cases inside this block
   // refer basic-details.js files
-  it('should check the shadowDOM of basic-details', async () => {
-    const el = await fixture('<basic-details></basic-details>');
-    await expect(el).shadowDom;
-  });
 
   it('should check the lion-form element', async () => {
     const el = await fixture('<basic-details></basic-details>');
